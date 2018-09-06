@@ -13,7 +13,7 @@ func doWork(id int,
 		w.done()
 	}
 }
-
+//建结构体
 type worker struct {
 	in   chan int
 	done func()
@@ -38,7 +38,7 @@ func chanDemo() {
 	for i := 0; i < 10; i++ {
 		workers[i] = createWorker(i, &wg)
 	}
-
+	//20个任务
 	wg.Add(20)
 	for i, worker := range workers {
 		worker.in <- 'a' + i

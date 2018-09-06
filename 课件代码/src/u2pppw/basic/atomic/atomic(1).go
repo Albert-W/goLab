@@ -8,12 +8,15 @@ import (
 
 type atomicInt struct {
 	value int
-	lock  sync.Mutex
+	//加锁
+	lock sync.Mutex
 }
 
+//+1；
 func (a *atomicInt) increment() {
 	fmt.Println("safe increment")
 	func() {
+		//加锁
 		a.lock.Lock()
 		defer a.lock.Unlock()
 

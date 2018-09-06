@@ -49,6 +49,8 @@ func main() {
 	})
 	fmt.Println("Node count:", nodeCount)
 
+	//找到最大节点
+	//拿到一个channel
 	c := root.TraverseWithChannel()
 	maxNodeValue := 0
 	for node := range c {

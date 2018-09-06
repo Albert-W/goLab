@@ -20,7 +20,7 @@ func worker(id int, c chan int) {
 	//	fmt.Printf("Worker %d received %d \n", id, n)
 	//}
 }
-//chan<- 只能送数据
+//chan<- 只能送数据 send;
 func createWorker(id int) chan<- int {
 	c := make(chan int)
 	go worker(id, c)
@@ -29,14 +29,17 @@ func createWorker(id int) chan<- int {
 
 func chanDemo() {
 	//var c chan int // c == nil 定义了接受int 的channel;
-	//c := make(chan int)
-	//go func() {
-	//	n := <-c
-	//	fmt.Println(n) // 1,2
-	//}()
-	//c <- 1
-	//c <- 2
-	//time.Sleep(time.Millisecond)
+	c := make(chan int)
+	go func() {
+		for{ //用死循环来收 channel
+			n := <-c
+			fmt.Println(n) // 1,2
+		}
+
+	}()
+	c <- 1  //没有收会deadlock
+	c <- 2
+	time.Sleep(time.Millisecond)
 	 //
 	 //开了10个channel
 	var channels [10]chan<- int
@@ -51,7 +54,7 @@ func chanDemo() {
 	for i := 0; i < 10; i++ {
 		channels[i] <- 'A' + i
 	}
-
+	//等待打印完毕
 	time.Sleep(time.Millisecond)
 }
 
