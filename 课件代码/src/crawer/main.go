@@ -2,13 +2,29 @@ package main
 
 import (
 	"crawer/engine"
+	"crawer/scheduler"
 	"crawer/zhenai/parser"
 )
 
 func main() {
-	engine.Run(engine.Request{
-		Url:"http://www.zhenai.com/zhenghun",
-		PaserFunc: parser.ParseCityList,
+	//engine.SimpleEngine{}.Run(engine.Request{
+	//	Url:"http://www.zhenai.com/zhenghun",
+	//	PaserFunc: parser.ParseCityList,
+	//})
+
+	e:= engine.ConcurrentEngine{
+		//Scheduler:&scheduler.SimpleScheduler{},
+		Scheduler:&scheduler.QueuedScheduler{},
+		WorkerCount:100,
+	}
+	//e.Run(engine.Request{
+	//	Url:"http://www.zhenai.com/zhenghun",
+	//	PaserFunc: parser.ParseCityList,
+	//})
+
+	e.Run(engine.Request{
+		Url:"http://www.zhenai.com/zhenghun/shanghai",
+		PaserFunc: parser.ParseCity,
 	})
 
 
