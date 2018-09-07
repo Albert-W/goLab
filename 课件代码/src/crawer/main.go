@@ -2,6 +2,7 @@ package main
 
 import (
 	"crawer/engine"
+	"crawer/persist"
 	"crawer/scheduler"
 	"crawer/zhenai/parser"
 )
@@ -11,11 +12,16 @@ func main() {
 	//	Url:"http://www.zhenai.com/zhenghun",
 	//	PaserFunc: parser.ParseCityList,
 	//})
-
-	e:= engine.ConcurrentEngine{
+	itemChan, err := persist.ItemSaver(
+		"dating_profile")
+	if err != nil {
+		panic(err)
+	}
+	e := engine.ConcurrentEngine{
 		//Scheduler:&scheduler.SimpleScheduler{},
-		Scheduler:&scheduler.QueuedScheduler{},
-		WorkerCount:100,
+		Scheduler:   &scheduler.QueuedScheduler{},
+		WorkerCount: 100,
+		ItemChan:    itemChan,
 	}
 	//e.Run(engine.Request{
 	//	Url:"http://www.zhenai.com/zhenghun",
@@ -23,10 +29,10 @@ func main() {
 	//})
 
 	e.Run(engine.Request{
-		Url:"http://www.zhenai.com/zhenghun/shanghai",
-		PaserFunc: parser.ParseCity,
-	})
+		Url:       "http://www.zhenai.com/zhenghun/shanghai",
+		ParserFunc: parser.ParseCity,
 
+	})
 
 	//resp, err := http.Get("http://www.zhenai.com/zhenghun")
 	//if err != nil {
@@ -54,7 +60,6 @@ func main() {
 	//printCityList(all)
 
 }
-
 
 //func printCityList(contents []byte)  {
 //	exp := `<a href="(http://www.zhenai.com/zhenghun/[0-9a-z]+)"

@@ -1,0 +1,448 @@
+GET http://localhost:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T090347.400.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/search?q=明
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T090058.400.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T085559.404.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T085410.400.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T085354.400.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T060515.400.json
+
+###
+
+GET http://localhost:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T060500.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T060416.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/1
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T060408.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/2?q="java"
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T060355.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q="java"
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T060342.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q="java"
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T060332.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q="java"
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T054524.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/1
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T054331.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/_mapping
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T054238.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/2
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T054210.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T054141.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q=golang
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T054032.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q=golang
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T053805.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T053756.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search/java
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T053708.400.txt
+
+###
+
+GET http://localhost:9200/imooc/course/_search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T053637.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T053612.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/2
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T053528.200.json
+
+###
+
+POST http://localhost:9200/imooc/course/2
+Content-Type: application/json
+
+{   "name":"java",       "instructor":"myself"}
+
+<> 2018-09-07T053521.201.json
+
+###
+
+GET http://localhost:9200/imooc/course/1
+Content-Type: application/json
+
+{   "name":"golang",       "instructor":"myself"}
+
+<> 2018-09-07T053452.200.json
+
+###
+
+PUT http://localhost:9200/imooc/course/1
+Content-Type: application/json
+
+{   "name":"golang",       "instructor":"myself"}
+
+<> 2018-09-07T053434.201.json
+
+###
+
+GET http://localhost:9200/imooc/course/1
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T053131.404.json
+
+###
+
+GET http://localhost:9200
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T053011.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+###
+
+GET http://localhost:9200/imooc/course/_search/golang
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T043140.400.txt
+
+###
+
+GET http://localhost:9200/imooc/course/_search/
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T043119.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search/scroll
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T043105.400.txt
+
+###
+
+GET http://localhost:9200/imooc/course/_search
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T042912.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/2
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T042850.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q=golang
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T042642.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/1?q=golang
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T042428.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/?q=golang
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T042421.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/1
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T042403.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/2
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T042356.200.json
+
+###
+
+GET http://localhost:9200/imooc/course/2?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T042344.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T042326.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/_search?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T041758.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T041720.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/q=2?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T041706.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/q=1?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T041702.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/q=1?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T041700.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T041650.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/1?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T041640.400.json
+
+###
+
+GET http://localhost:9200/imooc/course/2?q=golang&pretty=
+Content-Type: application/json
+
+{   "name":"java",   "instructor":"myself"}
+
+<> 2018-09-07T041631.400.json
+
+###
+

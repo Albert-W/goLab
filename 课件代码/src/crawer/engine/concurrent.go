@@ -1,10 +1,9 @@
 package engine
 
-import "log"
-
 type ConcurrentEngine struct {
-	Scheduler Scheduler
+	Scheduler   Scheduler
 	WorkerCount int
+	ItemChan    chan Item //用于存数据
 }
 
 type Scheduler interface {
@@ -14,44 +13,62 @@ type Scheduler interface {
 	WorkerChan() chan Request
 	Run()
 	//ConfigureMasterWorkerChan(chan Request)
-
 }
 
 type ReadyNotifier interface {
 	WorkerReady(chan Request)
 }
 
-func (e *ConcurrentEngine) Run(seeds ...Request)  {
+func (e *ConcurrentEngine) Run(seeds ...Request) {
 	//in := make( chan Request)
-	out := make( chan ParseResult)
+	out := make(chan ParseResult)
 	//e.Scheduler.ConfigureMasterWorkerChan(in)
 	e.Scheduler.Run()
 
-	for i:=0;i<e.WorkerCount; i++{
+	for i := 0; i < e.WorkerCount; i++ {
 		//createWorker(in,out)
-		createWorker(e.Scheduler.WorkerChan() ,out,e.Scheduler)
+		createWorker(e.Scheduler.WorkerChan(), out, e.Scheduler)
 	}
 
 	for _, r := range seeds {
+		if isDuplicate(r.Url) {
+			continue
+		}
 		e.Scheduler.Submit(r)
 	}
-	itemCount :=0
+	//itemCount := 0
 	for {
-		result := <- out
+		result := <-out
 		for _, item := range result.Items {
-			log.Printf("Got item #%d: %v",itemCount, item)
-			itemCount++
+			//要尽快处理
+			//log.Printf("Got item #%d: %v",itemCount, item)
+			//itemCount++
+			go func() { e.ItemChan <- item }()
 		}
 		for _, request := range result.Requests {
+			if isDuplicate(request.Url) {
+				continue
+			}
 			e.Scheduler.Submit(request)
 		}
 	}
 }
 
-func createWorker(in chan Request, out chan ParseResult, ready ReadyNotifier)  {
+var visitedUrl = make(map[string]bool)
+
+func isDuplicate(url string) bool {
+	if visitedUrl[url] {
+		return true
+	}
+	visitedUrl[url] = true
+	return false
+
+}
+
+func createWorker(in chan Request, out chan ParseResult, ready ReadyNotifier) {
 	//in := make(chan Request)
 	go func() {
-		for  {
+		for {
 			// tell scheduler I'm ready
 			ready.WorkerReady(in)
 			request := <-in
@@ -59,8 +76,8 @@ func createWorker(in chan Request, out chan ParseResult, ready ReadyNotifier)  {
 			if e != nil {
 				continue
 			}
-			out <-result
+			out <- result
 		}
 	}()
-	
+
 }

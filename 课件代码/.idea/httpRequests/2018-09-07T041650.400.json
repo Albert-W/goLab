@@ -1,0 +1,13 @@
+{
+  "error": {
+    "root_cause": [
+      {
+        "type": "illegal_argument_exception",
+        "reason": "No endpoint or operation is available at [course]"
+      }
+    ],
+    "type": "illegal_argument_exception",
+    "reason": "No endpoint or operation is available at [course]"
+  },
+  "status": 400
+}

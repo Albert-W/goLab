@@ -14,7 +14,7 @@ func TestParseCityList(t *testing.T) {
 	}
 	//fmt.Printf("%s\n",contents)
 
-	result := ParseCityList(contents)
+	result := ParseCityList(contents, "")
 	const resultSize = 470
 	//expectedUrls :=[]string{
 	//	"","","",
@@ -27,9 +27,9 @@ func TestParseCityList(t *testing.T) {
 		t.Errorf("result sould have %d requests; but had %d",
 			resultSize, len(result.Requests))
 	}
-	if len(result.Items) != resultSize {
-		t.Errorf("result sould have %d requests; but had %d",
-			resultSize, len(result.Items))
-	}
+	//if len(result.Items) != resultSize {
+	//	t.Errorf("result sould have %d requests; but had %d",
+	//		resultSize, len(result.Items))
+	//}
 
 }

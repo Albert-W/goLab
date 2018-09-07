@@ -1,0 +1,11 @@
+{
+  "_index": "imooc",
+  "_type": "course",
+  "_id": "1",
+  "_version": 1,
+  "found": true,
+  "_source": {
+    "name": "golang",
+    "instructor": "myself"
+  }
+}
