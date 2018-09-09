@@ -2,23 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7b642d3-ca9e-4b32-ae07-6d4eda9f04f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/crawer/engine/worker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawer/persist/itemsaver.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawer/persist/itemsaver_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/frontend/view/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/frontend/view/template_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/crawer/engine.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/crawer/engine.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/crawer/scheduler.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/crawer/scheduler.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/crawer/zhenai/parser.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/crawer/zhenai/parser.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawer/engine/concurrent.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawer/engine/concurrent.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawer/engine/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawer/engine/simple.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawer/engine/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawer/engine/types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawer/model/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawer/model/profile.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawer/zhenai/parser/city.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawer/zhenai/parser/city.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawer/zhenai/parser/citylist.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawer/zhenai/parser/citylist.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawer/zhenai/parser/citylist_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawer/zhenai/parser/citylist_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawer/zhenai/parser/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawer/zhenai/parser/profile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/engine/concurrent.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/engine/concurrent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/engine/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/engine/simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/engine/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/engine/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/engine/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/engine/worker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/fetcher/fetcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/fetcher/fetcher.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/model/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/model/profile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/persist/itemsaver.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/persist/itemsaver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/persist/itemsaver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/persist/itemsaver_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/scheduler/queued.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/scheduler/queued.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/scheduler/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/scheduler/simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/zhenai/parser/city.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/zhenai/parser/city.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/zhenai/parser/citylist.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/zhenai/parser/citylist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/zhenai/parser/citylist_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/zhenai/parser/citylist_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/zhenai/parser/citylist_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/zhenai/parser/citylist_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawer/zhenai/parser/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/zhenai/parser/profile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/encode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/encode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/hpack_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/hpack_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/golang.org/x/net/webdav/if_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/net/webdav/if_test.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +56,7 @@
     <session id="-1426212760">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="2" />
@@ -56,30 +64,37 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="121" />
-          <entry key="html" value="1" />
+          <entry key="css" value="4" />
+          <entry key="go" value="137" />
+          <entry key="html" value="10" />
           <entry key="http" value="9" />
           <entry key="in" value="1" />
+          <entry key="js" value="2" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="121" />
-          <entry key="HTML" value="1" />
+          <entry key="Go" value="137" />
+          <entry key="HTML" value="10" />
           <entry key="HTTP Request" value="1" />
+          <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
+          <entry key="SCSS" value="4" />
           <entry key="Scratch" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="10785" />
+          <entry key="css" value="233" />
+          <entry key="go" value="11294" />
+          <entry key="html" value="435" />
           <entry key="http" value="32" />
           <entry key="json" value="53" />
           <entry key="txt" value="20" />
@@ -87,10 +102,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="10776" />
+          <entry key="Go" value="11285" />
+          <entry key="HTML" value="435" />
           <entry key="JSON" value="53" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="RegExp" value="9" />
+          <entry key="SCSS" value="233" />
           <entry key="Scratch" value="32" />
         </counts>
       </usages-collector>
@@ -105,99 +122,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawer/persist/itemsaver.go">
+        <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/searchresult.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="128">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
-                <element signature="e#17#65#0" expanded="true" />
-                <element signature="n#!!block;n#save#0" expanded="true" />
+                <element signature="e#14#78#0" expanded="true" />
+                <element signature="n#!!block;n#CreateSearchResultView#0" expanded="true" />
+                <element signature="n#!!block;n#Render#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawer/engine/types.go">
+        <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/search_result_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="-178">
+              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
               <folding>
-                <element signature="n#!!block;n#NilParser#0" expanded="true" />
+                <element signature="e#14#114#0" expanded="true" />
+                <element signature="e#166#193#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawer/zhenai/parser/city.go">
+        <entry file="file://$PROJECT_DIR$/src/crawler/frontend/starter.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawer/zhenai/parser/citylist.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="307">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="e#16#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawer/model/profile.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!block;n#FromJsonObj#0" expanded="true" />
+                <element signature="e#14#67#0" expanded="true" />
+                <element signature="n#!!block;n#main#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/crawer/zhenai/parser/profile.go">
+        <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-              <folding>
-                <element signature="e#16#80#0" expanded="true" />
-                <element signature="n#!!block;n#ParseProfile#0" expanded="true" />
-                <element signature="e#1974#2011#0" expanded="true" />
-                <element signature="n#!!block;n#extractString#0" expanded="true" />
-                <element signature="n#!!block;n#ProfileParser#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="411">
+              <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawer/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-              <folding>
-                <element signature="e#14#103#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/js/main.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawer/engine/worker.go">
+        <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/template_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="16">
+              <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="45" />
               <folding>
-                <element signature="e#16#51#0" expanded="true" />
-                <element signature="n#!!block;n#worker#0" expanded="true" />
+                <element signature="e#205#232#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -209,6 +193,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -219,6 +204,17 @@
       <find>Fetching</find>
       <find>Fetcher:</find>
       <find>Fetcher: error fetching url</find>
+      <find>button</find>
+      <find>thead</find>
+      <find>table100-h</find>
+      <find>search</find>
+      <find>h</find>
+      <find>align</find>
+      <find>h5</find>
+      <find>sear</find>
+      <find>limiter</find>
+      <find>container</find>
+      <find>height</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -241,26 +237,9 @@
     </option>
     <option name="useGoPathFromSystemEnvironment" value="false" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response39.json" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/u2pppw/tree/treeentry/entry.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/basic/basic/basic.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/basic/branch/branch.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/tree/node.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/queue/queueentry/main.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/retriever/real/retriever.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/queue/queue.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/retriever/main.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/retriever/mock/mockretriever.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/basic/loop/loop.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/functional/fib/fib.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/functional/main.go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/tree/traversal(1).go" />
-        <option value="$PROJECT_DIR$/src/u2pppw/functional/adder/adder.go" />
         <option value="$PROJECT_DIR$/src/u2pppw/errhandling/defer/defer.go" />
         <option value="$PROJECT_DIR$/src/u2pppw/errhandling/recover/recover.go" />
         <option value="$PROJECT_DIR$/src/u2pppw/errhandling/filelistingserver/web.go" />
@@ -298,6 +277,20 @@
         <option value="$PROJECT_DIR$/src/crawer/zhenai/parser/citylist.go" />
         <option value="$PROJECT_DIR$/src/crawer/zhenai/parser/city.go" />
         <option value="$PROJECT_DIR$/src/crawer/zhenai/parser/profile.go" />
+        <option value="$PROJECT_DIR$/src/crawer/frontend/view/index.html" />
+        <option value="$PROJECT_DIR$/src/crawer/frontend/view/model/page.go" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/view/model/page.go" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/template_test.go" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/view/searchresult.go" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/view/template_test.go" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/view/search_result_test.go" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/starter.go" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/controller/searchresult.go" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/view/template.test.html" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/view/temp.html" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/view/template.html" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/view/css/main.css" />
+        <option value="$PROJECT_DIR$/src/crawler/frontend/view/index.html" />
       </list>
     </option>
   </component>
@@ -314,10 +307,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="447" />
-    <option name="y" value="48" />
-    <option name="width" value="1409" />
-    <option name="height" value="924" />
+    <option name="x" value="-10" />
+    <option name="y" value="69" />
+    <option name="width" value="1943" />
+    <option name="height" value="928" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -347,17 +340,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="课件代码" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="课件代码" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -376,57 +358,38 @@
               <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
               <item name="课件代码" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="crawer" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
               <item name="课件代码" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="crawer" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
               <item name="课件代码" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="crawer" type="462c0819:PsiDirectoryNode" />
-              <item name="fetcher" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
               <item name="课件代码" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="crawer" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
+              <item name="课件代码" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="课件代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="crawer" type="462c0819:PsiDirectoryNode" />
-              <item name="persist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="课件代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="crawer" type="462c0819:PsiDirectoryNode" />
-              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="课件代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="crawer" type="462c0819:PsiDirectoryNode" />
-              <item name="zhenai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="课件代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="crawer" type="462c0819:PsiDirectoryNode" />
-              <item name="zhenai" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="课件代码" type="b2602c69:ProjectViewProjectNode" />
@@ -441,17 +404,29 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="课件代码" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="课件代码" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="submi&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536359110055" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536499178231" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -467,6 +442,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\codes\GitHub\goLab\课件代码\src\crawler\frontend\view" />
+      <recent name="E:\codes\GitHub\goLab\课件代码\src\crawer" />
       <recent name="E:\codes\GitHub\goLab\课件代码\src\crawer\persist" />
       <recent name="E:\codes\GitHub\goLab\课件代码\src" />
     </key>
@@ -1509,72 +1486,57 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build starter.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="课件代码" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/crawer/main.go" />
+      <filePath value="$PROJECT_DIR$/src/crawler/main.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build maze.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build starter.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="课件代码" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/u2pppw/maze/maze.go" />
+      <filePath value="$PROJECT_DIR$/src/crawler/frontend/starter.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build regexp.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSearchResultView_Render in crawler/frontend/view" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="课件代码" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/u2pppw/basic/regexp/regexp.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestParseCityList in crawer/zhenai/parser" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="课件代码" />
-      <working_directory value="$PROJECT_DIR$/src/crawer/zhenai/parser" />
+      <working_directory value="$PROJECT_DIR$/src/crawler/frontend/view" />
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="crawer/zhenai/parser" />
+      <package value="crawler/frontend/view" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestParseCityList$" />
+      <pattern value="^TestSearchResultView_Render$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSaver in crawer/persist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="课件代码" />
-      <working_directory value="$PROJECT_DIR$/src/crawer/persist" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="crawer/persist" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestSaver$" />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/课件代码/src/crawler/frontend/view/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="template.test.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/课件代码/src/crawler/frontend/view/template.test.html">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build maze.go" />
+      <item itemvalue="JavaScript Debug.template.test.html (2)" />
+      <item itemvalue="Go Test.TestSearchResultView_Render in crawler/frontend/view" />
+      <item itemvalue="Go Build.go build starter.go" />
       <item itemvalue="Go Build.go build main.go" />
-      <item itemvalue="Go Build.go build regexp.go" />
-      <item itemvalue="Go Test.TestParseCityList in crawer/zhenai/parser" />
-      <item itemvalue="Go Test.TestSaver in crawer/persist" />
+      <item itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build starter.go" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Test.TestSaver in crawer/persist" />
-        <item itemvalue="Go Test.TestParseCityList in crawer/zhenai/parser" />
-        <item itemvalue="Go Build.go build regexp.go" />
-        <item itemvalue="Go Build.go build maze.go" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Go Test.TestSearchResultView_Render in crawler/frontend/view" />
+        <item itemvalue="JavaScript Debug.template.test.html (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -1605,28 +1567,11 @@
       <workItem from="1536326349165" duration="4124000" />
       <workItem from="1536332487836" duration="2469000" />
       <workItem from="1536337709016" duration="13499000" />
+      <workItem from="1536483074437" duration="16144000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSaver_in_crawer_persist - 2018.09.07 at 18h 01m 18s.xml">
-      <configuration name="TestSaver in crawer/persist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSaver_in_crawer_persist - 2018.09.07 at 18h 02m 06s.xml">
-      <configuration name="TestSaver in crawer/persist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSaver_in_crawer_persist - 2018.09.07 at 18h 13m 04s.xml">
-      <configuration name="TestSaver in crawer/persist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSaver_in_crawer_persist - 2018.09.07 at 18h 13m 29s.xml">
-      <configuration name="TestSaver in crawer/persist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSaver_in_crawer_persist - 2018.09.07 at 18h 23m 37s.xml">
-      <configuration name="TestSaver in crawer/persist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSaver_in_crawer_persist - 2018.09.07 at 20h 52m 27s.xml">
-      <configuration name="TestSaver in crawer/persist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestSaver_in_crawer_persist - 2018.09.07 at 21h 36m 00s.xml">
       <configuration name="TestSaver in crawer/persist" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -1639,9 +1584,27 @@
     <history-entry file="TestSaver_in_crawer_persist - 2018.09.07 at 22h 44m 52s.xml">
       <configuration name="TestSaver in crawer/persist" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestTemplate_in_crawler_frontend - 2018.09.09 at 10h 18m 53s.xml">
+      <configuration name="TestTemplate in crawler/frontend" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTemplate_in_crawler_frontend - 2018.09.09 at 10h 19m 38s.xml">
+      <configuration name="TestTemplate in crawler/frontend" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTemplate_in_crawler_frontend - 2018.09.09 at 10h 21m 52s.xml">
+      <configuration name="TestTemplate in crawler/frontend" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTemplate_in_crawler_frontend - 2018.09.09 at 10h 23m 31s.xml">
+      <configuration name="TestTemplate in crawler/frontend" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTemplate_in_crawler_frontend - 2018.09.09 at 10h 28m 12s.xml">
+      <configuration name="TestTemplate in crawler/frontend" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSearchResultView_Render_in_crawler_frontend_view - 2018.09.09 at 10h 38m 21s.xml">
+      <configuration name="TestSearchResultView_Render in crawler/frontend/view" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89773000" />
+    <option name="totallyTimeSpent" value="105917000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1653,10 +1616,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="361" y="39" width="1136" height="745" extended-state="0" />
+    <frame x="-8" y="56" width="1567" height="748" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.25695732" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.20543407" />
       <window_info id="Structure" order="1" sideWeight="0.5011601" side_tool="true" weight="0.33838382" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1664,14 +1627,14 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5101695" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3564189" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22972973" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288719" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.44732296" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.44672897" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3288719" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -1733,97 +1696,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/functional/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/functional/adder/adder.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/errhandling/defer/defer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/errhandling/recover/recover.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/errhandling/filelistingserver/filelisting/handler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/basic/basic/triangl_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/basic/basic/basic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/queue/queue_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/errhandling/filelistingserver/errwrapper_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="93" column="41" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/container/nonrepeatingsubstr/nonrepeating_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/container/nonrepeatingsubstr/nonrepeating.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/queue/queue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/u2pppw/goroutine/goroutine.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/u2pppw/channel/channel.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="896">
@@ -1901,14 +1773,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/zhenai/parser/citylist_test.html">
+    <entry file="file://$PROJECT_DIR$/src/crawler/zhenai/parser/citylist_test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27296">
           <caret line="1752" column="461" selection-start-line="1752" selection-start-column="461" selection-end-line="1752" selection-end-column="461" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/scheduler/simple.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/scheduler/simple.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
@@ -1922,18 +1794,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/fetcher/fetcher.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/fetcher/fetcher.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="51" column="57" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
-          <folding>
-            <element signature="n#!!block;n#Fetch#0" expanded="true" />
-            <element signature="n#!!block;n#determinEncoding#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/scheduler/queued.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/scheduler/queued.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
@@ -1980,9 +1848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-          <folding>
-            <element signature="e#4111#4358#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1993,7 +1858,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/persist/itemsaver_test.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/persist/itemsaver_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="832">
           <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
@@ -2003,7 +1868,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/zhenai/parser/citylist_test.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/zhenai/parser/citylist_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
@@ -2013,30 +1878,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/engine/simple.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/engine/simple.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-          <folding>
-            <element signature="e#16#33#0" expanded="true" />
-            <element signature="e#271#307#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/engine/concurrent.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/engine/concurrent.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-608">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/persist/itemsaver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding>
-            <element signature="n#!!block;n#Run#0" expanded="true" />
-            <element signature="n#!!block;n#isDuplicate#0" expanded="true" />
-            <element signature="n#!!block;n#createWorker#0" expanded="true" />
+            <element signature="n#!!block;n#save#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/engine/worker.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/engine/worker.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
@@ -2047,37 +1913,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding>
-            <element signature="e#14#103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/zhenai/parser/citylist.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="e#16#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/model/profile.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!block;n#FromJsonObj#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/engine/types.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/engine/types.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
@@ -2087,35 +1923,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/persist/itemsaver.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/zhenai/parser/city.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="217">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/zhenai/parser/citylist.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
           <folding>
-            <element signature="e#17#65#0" expanded="true" />
-            <element signature="n#!!block;n#save#0" expanded="true" />
+            <element signature="e#16#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/zhenai/parser/city.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/zhenai/parser/profile.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawer/zhenai/parser/profile.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
+        <state relative-caret-position="160">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding>
             <element signature="e#16#80#0" expanded="true" />
             <element signature="n#!!block;n#ParseProfile#0" expanded="true" />
-            <element signature="e#1974#2011#0" expanded="true" />
             <element signature="n#!!block;n#extractString#0" expanded="true" />
             <element signature="n#!!block;n#ProfileParser#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/model/profile.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!block;n#FromJsonObj#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/template.test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="84" column="7" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/model/page.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/css/util.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/template.test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3592">
+          <caret line="242" selection-start-line="242" selection-end-line="249" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/controller/searchresult.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+          <folding>
+            <element signature="e#20#201#0" expanded="true" />
+            <element signature="n#!!block;n#CreateSearchResultHandler#0" expanded="true" />
+            <element signature="e#577#602#0" expanded="true" />
+            <element signature="n#!!block;n#ServeHTTP#0" expanded="true" />
+            <element signature="n#!!block;n#rewriteQueryString#0" expanded="true" />
+            <element signature="e#1897#1926#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/search_result_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+          <folding>
+            <element signature="e#14#114#0" expanded="true" />
+            <element signature="e#166#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/searchresult.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="e#14#78#0" expanded="true" />
+            <element signature="n#!!block;n#CreateSearchResultView#0" expanded="true" />
+            <element signature="n#!!block;n#Render#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1923">
+          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/starter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#14#67#0" expanded="true" />
+            <element signature="n#!!block;n#main#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/js/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/template_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#205#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/frontend/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
         </state>
       </provider>
     </entry>

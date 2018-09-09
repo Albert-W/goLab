@@ -67,7 +67,7 @@ func TestEncoderWriteField(t *testing.T) {
 		{[]HeaderField{
 			pair(":method", "GET"),
 			pair(":scheme", "https"),
-			pair(":path", "/index.html"),
+			pair(":path", "/template.html"),
 			pair(":authority", "www.example.com"),
 			pair("custom-key", "custom-value"),
 		}},
