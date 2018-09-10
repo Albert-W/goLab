@@ -3,6 +3,8 @@ package parser
 import (
 	"crawler/engine"
 	"crawler/model"
+	"crawler_distributed/config"
+	"log"
 	"regexp"
 	"strconv"
 )
@@ -90,8 +92,8 @@ func ParseProfile(contents []byte, url string, name string) engine.ParseResult {
 		result.Requests = append(result.Requests,
 			engine.Request{
 				Url:url,
-				ParserFunc: ProfileParser(name),
-
+				//ParserFunc: ProfileParser(name),
+				Parser:NewProfileParser(name),
 			})
 	}
 
@@ -108,8 +110,31 @@ func extractString(contents []byte, re *regexp.Regexp) string  {
 
 }
 
-func ProfileParser(name string) engine.ParserFunc{
-	return func(c []byte, url string) engine.ParseResult{
-		return ParseProfile(c, url, name)}
+type ProfileParser struct {
+	userName string
+}
+
+func (p *ProfileParser) Parse(contents []byte, url string) engine.ParseResult {
+	return ParseProfile(contents,url,p.userName)
 
 }
+
+func (p *ProfileParser) Serialize() (name string, args interface{}) {
+	log.Print("ProfileParser Serialize")
+	//return "ProfileParser", p.userName
+	return config.ParseProfile, p.userName //
+}
+
+func NewProfileParser(name string) *ProfileParser {
+	return &ProfileParser{
+		userName:name,
+	}
+}
+
+
+//func ProfileParser(name string) engine.ParserFunc{
+//	return func(c []byte, url string) engine.ParseResult{
+//		return ParseProfile(c, url, name)}
+//
+//}
+

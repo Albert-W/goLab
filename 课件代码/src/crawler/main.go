@@ -19,9 +19,10 @@ func main() {
 	}
 	e := engine.ConcurrentEngine{
 		//Scheduler:&scheduler.SimpleScheduler{},
-		Scheduler:   &scheduler.QueuedScheduler{},
-		WorkerCount: 100,
-		ItemChan:    itemChan,
+		Scheduler:        &scheduler.QueuedScheduler{},
+		WorkerCount:      100,
+		ItemChan:         itemChan,
+		RequestProcessor: engine.Worker, //单机版直接调worker
 	}
 	//e.Run(engine.Request{
 	//	Url:"http://www.zhenai.com/zhenghun",
@@ -29,9 +30,11 @@ func main() {
 	//})
 
 	e.Run(engine.Request{
-		Url:       "http://www.zhenai.com/zhenghun/shanghai",
-		ParserFunc: parser.ParseCity,
-
+		//Url:       "http://www.zhenai.com/zhenghun/shanghai",
+		Url: "http://www.zhenai.com/zhenghun",
+		//ParserFunc: parser.ParseCity,
+		Parser: engine.NewFuncParser(
+			parser.ParseCityList, "ParseCityList"),
 	})
 
 	//resp, err := http.Get("http://www.zhenai.com/zhenghun")

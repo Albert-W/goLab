@@ -1,10 +1,13 @@
 package engine
 
 type ConcurrentEngine struct {
-	Scheduler   Scheduler
-	WorkerCount int
-	ItemChan    chan Item //用于存数据
+	Scheduler        Scheduler
+	WorkerCount      int
+	ItemChan         chan Item //用于存数据
+	RequestProcessor Processor //用于Worker rpc,是work()函数
 }
+//src/crawler/engine/worker.go
+type Processor func(Request) (ParseResult, error)
 
 type Scheduler interface {
 	ReadyNotifier
@@ -27,7 +30,7 @@ func (e *ConcurrentEngine) Run(seeds ...Request) {
 
 	for i := 0; i < e.WorkerCount; i++ {
 		//createWorker(in,out)
-		createWorker(e.Scheduler.WorkerChan(), out, e.Scheduler)
+		e.createWorker(e.Scheduler.WorkerChan(), out, e.Scheduler)
 	}
 
 	for _, r := range seeds {
@@ -65,14 +68,19 @@ func isDuplicate(url string) bool {
 
 }
 
-func createWorker(in chan Request, out chan ParseResult, ready ReadyNotifier) {
+//func createWorker(in chan Request, out chan ParseResult, ready ReadyNotifier) {
+func (e *ConcurrentEngine) createWorker(
+	in chan Request,
+	out chan ParseResult, ready ReadyNotifier) {
 	//in := make(chan Request)
 	go func() {
 		for {
 			// tell scheduler I'm ready
 			ready.WorkerReady(in)
 			request := <-in
-			result, e := worker(request)
+			// 换成call rpc, 这里是分布式的关键//17.8
+			result, e := e.RequestProcessor(request)
+			//result, e := Worker(request)
 			if e != nil {
 				continue
 			}
